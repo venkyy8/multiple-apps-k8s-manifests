@@ -8,4 +8,4 @@ spec:
     spec:
       containers:
       - name: htmlsampleproject
-        image: venkyy82/htmlsampleproject:2.1  # Override image version for production
+        image: venkyy82/htmlsampleproject:2.0  # Override image version for production
