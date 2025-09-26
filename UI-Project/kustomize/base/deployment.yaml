@@ -19,10 +19,4 @@ spec:
         image: venkyy82/htmlsampleproject:2.0  # Your Docker image
         ports:
         - containerPort: 80  # The port your application listens on inside the container
-        resources:
-          requests:
-            memory: "256Mi"
-            cpu: "250m"
-          limits:
-            memory: "512Mi"
-            cpu: "500m"
+
