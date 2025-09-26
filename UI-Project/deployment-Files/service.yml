@@ -10,3 +10,5 @@ spec:
       port: 80       # The port the service will expose
       targetPort: 80  # The port the application listens on in the pod
   type: NodePort  # You can use ClusterIP or NodePort depending on your needs
+
+  
