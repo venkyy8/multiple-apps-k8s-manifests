@@ -1,12 +1,14 @@
-bases:
+resources:
   - ../../base
 
 namePrefix: prod-
 
-resources:
-  - deployment.yaml
-  - service.yaml
-
-patchesStrategicMerge:
-  - deployment-patch.yaml
-  - service-patch.yaml
+patches:
+  - path: deployment-patch.yaml
+    target:
+      kind: Deployment
+      name: htmlsampleproject-deployment
+  - path: service-patch.yaml
+    target:
+      kind: Service
+      name: htmlsampleproject-service
