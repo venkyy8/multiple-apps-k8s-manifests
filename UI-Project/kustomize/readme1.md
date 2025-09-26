@@ -71,17 +71,6 @@ To deploy the **production** configuration:
 kubectl apply -k overlays/production/
 ````
 
-To preview the full manifest that will be applied:
-
-```sh
-kustomize build overlays/production/
-```
-
-Or using `kubectl` (v1.14+):
-
-```sh
-kubectl kustomize overlays/production/
-```
 
 ---
 
