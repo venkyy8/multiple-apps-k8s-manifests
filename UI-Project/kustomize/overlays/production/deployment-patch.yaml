@@ -1,0 +1,11 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: htmlsampleproject-deployment
+spec:
+  replicas: 5  # Override the number of replicas for production
+  template:
+    spec:
+      containers:
+      - name: htmlsampleproject
+        image: venkyy82/htmlsampleproject:2.1  # Override image version for production

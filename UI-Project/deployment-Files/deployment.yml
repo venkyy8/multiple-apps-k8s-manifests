@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: htmlsampleproject-deployment
+  labels:
+    app: htmlsampleproject
+spec:
+  replicas: 3  # Number of replicas of your pod
+  selector:
+    matchLabels:
+      app: htmlsampleproject
+  template:
+    metadata:
+      labels:
+        app: htmlsampleproject
+    spec:
+      containers:
+      - name: htmlsampleproject
+        image: venkyy82/htmlsampleproject:2.0  # Your Docker image
+        ports:
+        - containerPort: 80  # The port your application listens on inside the container

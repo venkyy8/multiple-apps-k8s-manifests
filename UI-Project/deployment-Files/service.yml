@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: htmlsampleproject-service
+spec:
+  selector:
+    app: htmlsampleproject  # Must match the label of your deployment
+  ports:
+    - protocol: TCP
+      port: 80       # The port the service will expose
+      targetPort: 80  # The port the application listens on in the pod
+  type: NodePort  # You can use ClusterIP or NodePort depending on your needs

@@ -1,0 +1,12 @@
+bases:
+  - ../../base
+
+namePrefix: prod-
+
+resources:
+  - deployment.yaml
+  - service.yaml
+
+patchesStrategicMerge:
+  - deployment-patch.yaml
+  - service-patch.yaml
