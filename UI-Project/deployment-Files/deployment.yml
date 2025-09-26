@@ -5,7 +5,7 @@ metadata:
   labels:
     app: htmlsampleproject
 spec:
-  replicas: 3  # Number of replicas of your pod
+  replicas: 2  # Number of replicas of your pod
   selector:
     matchLabels:
       app: htmlsampleproject
@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: htmlsampleproject
-        image: venkyy82/htmlsampleproject:2.0  # Your Docker image
+        image: venkyy82/htmlsampleproject:1.0  # Your Docker image
         ports:
         - containerPort: 80  # The port your application listens on inside the container
