@@ -3,4 +3,4 @@ kind: Service
 metadata:
   name: htmlsampleproject-service
 spec:
-  type: LoadBalancer  # Use LoadBalancer for production instead of NodePort
+  type: NodePort  # Use LoadBalancer for production instead of NodePort
