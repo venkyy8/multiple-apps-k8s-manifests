@@ -17,6 +17,8 @@ htmlsampleproject-kustomize/
         ├── kustomization.yaml     # Kustomize config for production overlay
         ├── deployment-patch.yaml  # Patch for Deployment in production
         └── service-patch.yaml     # Patch for Service in production
+    └── Staging/
+        ├── inprogress.yaml     
 
 ````
 
